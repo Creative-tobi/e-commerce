@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+      .dark-mode {
+        background-color: rgb(12, 12, 23);
+        color: white;
+      }
+
+     
+    </style>
+  </head>
+  <body class="dark-mode">
+    <!-- <header class="sticky top-0"> -->
+      <div class="block md:flex justify-between mt-4 mx-4">
+        <div class="flex">
+          <i class="fa-solid fa-cart-plus text-red-700 text-5xl"></i>
+          <div class="">
+            <ul>
+              <li>daily shop</li>
+              <li class="font-bold">YOUR SHOPPING PARTNER</li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <input
+            type="text"
+            name="text"
+            id="text"
+            placeholder="Search here ex man"
+            class="border p-2"
+          />
+          <i class="fa-solid fa-magnifying-glass border p-2.5"></i>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-basket-shopping text-5xl text-red-700"></i>
+          <p class="font-bold">SHOPPING CART</p>
+        </div>
+      </div>
+
+      <div class="sticky top-0" >
+        <nav class="bg-red-600 p-1">
+          <ul class="block md:flex list-none gap-20">
+            <li>
+              <a href="index.html" style="text-decoration: none; color: white"
+                >HOME</a
+              >
+            </li>
+            <li>
+              <a href="product.html" style="text-decoration: none; color: white"
+                >PRODUCT</a
+              >
+            </li>
+            <li>
+              <a href="payment.html" style="text-decoration: none; color: white"
+                >PAYMENT</a
+              >
+            </li>
+            <li>
+              <a href="contact.html" style="text-decoration: none; color: white"
+                >CONTACT</a
+              >
+            </li>
+            <div class="bg-dark-mode-white">
+              <i
+                class="fa-solid fa-lightbulb"
+                onclick="document.body.classList.toggle('dark-mode')"
+              ></i>
+            </div>
+          </ul>
+        </nav>
+      </div>
+    <!-- </header> -->
+
+    <h2 class="text-red-500 font-bold text-center m-4">
+      SHOPPING MADE EASY AND AFFORDABLE WITH RealMeTech
+    </h2>
+
+    <div class="flex grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 m-4">
+      <div>
+        <h4 class="text-red-500">Category</h4>
+        <hr style="color: rgb(255, 0, 0)" />
+        <ul class="text-grey font-normal text-lg">
+          <li class="py-2">Wear</li>
+          <li class="py-2">Furniture</li>
+          <li class="py-2">Phones</li>
+          <li class="py-2">Novels</li>
+          <li class="py-2">Toys</li>
+        </ul>
+
+        <h4 class="text-red-500">Tags</h4>
+        <hr style="color: rgb(255, 0, 0)" />
+        <ul class="text-grey font-normal text-lg">
+          <li class="py-2">Kida</li>
+          <li class="py-2">Accessories</li>
+          <li class="py-2">Books</li>
+          <li class="py-2">Interiors</li>
+        </ul>
+
+        <h4 class="text-red-500">Shop By Price</h4>
+        <hr style="color: rgb(255, 0, 0)" />
+        <div class=" "> 
+          <button
+            style=" margin: 8px;
+              border-radius: 12px;
+              padding: 8px;
+              border: 1px solid rgb(250, 89, 89);
+              background-color: rgb(250, 89, 89);
+            "
+          >
+            <a style="text-decoration: none; color: white" href="#"
+              >₦5,00-₦1,000</a
+            >
+          </button>
+
+          <button
+            style="
+              border-radius: 12px;
+              padding: 8px;
+              border: 1px solid rgb(250, 89, 89);
+              background-color: rgb(250, 89, 89);
+            "
+          >
+            <a style="text-decoration: none; color: white" href="#"
+              >₦1,000-₦5,000</a
+            >
+          </button>
+
+          <button
+            style="
+              border-radius: 12px;
+              padding: 8px;
+              border: 1px solid rgb(250, 89, 89);
+              background-color: rgb(250, 89, 89);
+            "
+          >
+            <a style="text-decoration: none; color: white" href="#"
+              >₦5,000-₦10,000</a
+            >
+          </button>
+
+          <button
+            style="
+              border-radius: 12px;
+              padding: 8px;
+              border: 1px solid rgb(250, 89, 89);
+              background-color: rgb(250, 89, 89);
+            "
+          >
+            <a style="text-decoration: none; color: white" href="#"
+              >₦10,00-Above</a
+            >
+          </button>
+        </div>
+
+        <h4 class="text-red-400 mt-4">Shop By Colour</h4>
+      <hr style="color: rgb(255, 0, 0)" />
+        <div>
+          <button class="border border-red-600 rounded-md w-[40px] h-[20px] bg-red-600"></button>
+          <button class="border border-red-600 rounded-md w-[40px] h-[20px] bg-blue-600"></button>
+          <button class="border border-red-600 rounded-md w-[40px] h-[20px] bg-yellow-600"></button>
+          <button class="border border-red-600 rounded-md w-[40px] h-[20px] bg-green-600"></button>
+          <button class="border border-red-600 rounded-md w-[40px] h-[20px] bg-purple-600"></button>
+          <button class="border border-red-600 rounded-md w-[40px] h-[20px] bg-orange-600"></button>
+          <button class="border border-red-600 rounded-md w-[40px] h-[20px] bg-yellow-950"></button>
+          <button class="border border-red-600 rounded-md w-[40px] h-[20px] bg-red-950"></button>
+          <button class="border border-red-600 rounded-md w-[40px] h-[20px] bg-green-900"></button>
+          <button class="border border-red-600 rounded-md w-[40px] h-[20px] bg-blue-950"></button>
+        </div>
+
+        <h4 class="text-red-500 mt-4">Recently Viewed</h4>
+      <hr style="color: rgb(255, 0, 0)" />
+      <img src="./image/chair3.jpg.jpeg" alt="">
+      <img src="./image/kidstoy7.jpg.webp" alt="">
+      <img src="./image/books-1141911__340.jpg.jpeg" alt="">
+      </div>
+
+      <div class="mx-4">
+        <input type="text" name="text" id="text" placeholder="Age 2-5" class="border p-2 sm:mt-4">
+        <div class="my-4">
+          <img src="./image/kidbaby-84552__340.webp" alt="" class="h-[270px]">
+          <p class="text-lg">Classic Kids Toy</p>
+          <p>₦4,500</p>
+          <button class="bg-red-500 p-2 text-white" style="border-radius: 8px;">ADD TO CART</button>
+        </div>
+
+        <div class="my-4">
+          <img src="./image/kidstoy3.jpg.jpeg" alt="" class="h-[270px]">
+          <p class="text-lg">Fur Horse</p>
+          <p>₦2,500</p>
+          <button class="bg-red-500 p-2 text-white" style="border-radius: 8px;">ADD TO CART</button>
+        </div>
+
+        <div class="my-4">
+          <img src="./image/kidstoy4.jpg.jpeg" alt="" class="h-[270px]">
+          <p class="text-lg">Exclusive Toy Set</p>
+          <p>₦12,000</p>
+          <button class="bg-red-500 p-2 text-white" style="border-radius: 8px;">ADD TO CART</button>
+        </div>
+
+        <div class="my-4">
+          <img src="./image/kidstoy5.jpg.webp" alt="" class="h-[270px]">
+          <p class="text-lg">Bubble Up</p>
+          <p>₦1,050</p>
+          <button class="bg-red-500 p-2 text-white" style="border-radius: 8px;">ADD TO CART</button>
+        </div>
+      </div>
+
+      <div class="mx-4">
+        <input type="text" name="text" id="text" placeholder="Age 6-15" class="border p-2">
+        <div class="my-4">
+          <img src="./image/boot-7288667__340.jpg.jpeg" alt="" class="h-[270px]">
+          <p class="text-lg">Timber Land</p>
+          <p>₦9,000</p>
+          <button class="bg-red-500 p-2 text-white" style="border-radius: 8px;">ADD TO CART</button>
+        </div>
+
+        <div class="my-4">
+          <img src="./image/boot2.jpg.jpeg" alt="" class="h-[270px]">
+          <p class="text-lg">Sport Sneakers</p>
+          <p>₦6,200</p>
+          <button class="bg-red-500 p-2 text-white" style="border-radius: 8px;">ADD TO CART</button>
+        </div>
+
+        <div class="my-4">
+          <img src="./image/boot3.jpg.jpeg" alt="" class="h-[270px]">
+          <p class="text-lg">Unisex Trainers</p>
+          <p>₦12,000</p>
+          <button class="bg-red-500 p-2 text-white" style="border-radius: 8px;">ADD TO CART</button>
+        </div>
+
+        <div class="my-4">
+          <img src="./image/boot5.jpg.jpeg" alt="" class="h-[270px]">
+          <p class="text-lg">Combo Sport Kit</p>
+          <p>₦15,100</p>
+          <button class="bg-red-500 p-2 text-white" style="border-radius: 8px;">ADD TO CART</button>
+        </div>
+      </div>
+
+
+      <div class="mx-4">
+        <input type="text" name="text" id="text" placeholder="Age 16 and Above" class="border p-2">
+        <div class="my-4">
+          <img src="./image/winter-wear-6995740__340.webp" alt="" class="h-[270px]">
+          <p class="text-lg">Winter Shoes and Gloves</p>
+          <p>₦17,890</p>
+          <button class="bg-red-500 p-2 text-white" style="border-radius: 8px;">ADD TO CART</button>
+        </div>
+
+        <div class="my-4">
+          <img src="./image/winter.jpg.jpeg" alt="" class="h-[270px]">
+          <p class="text-lg">Complete Cold Kit</p>
+          <p>₦22,679</p>
+          <button class="bg-red-500 p-2 text-white" style="border-radius: 8px;">ADD TO CART</button>
+        </div>
+
+        <div class="my-4">
+          <img src="./image/winter2.jpg.jpeg" alt="" class="h-[270px]">
+          <p class="text-lg">Cotton Cardigan</p>
+          <p>₦7,200</p>
+          <button class="bg-red-500 p-2 text-white" style="border-radius: 8px;">ADD TO CART</button>
+        </div>
+
+        <div class="my-4">
+          <img src="./image/winter3.jpg.jpeg" alt="" class="h-[270px] w-[270px]">
+          <p class="text-lg">Mother and SOn Winter Kit</p>
+          <p>₦19,145</p>
+          <button class="bg-red-500 p-2 text-white" style="border-radius: 8px;">ADD TO CART</button>
+        </div>
+      </div>
+    </div>
+
+    <div aria-label="Page navigation example">
+      <ul class="pagination mx-[100px] md:mx-[300px] lg:mx-[50%]">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+        <li class="page-item"><a class="page-link" href="product.html">2</a></li>
+        <li class="page-item"><a class="page-link" href="product.html">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <footer class="bg-black text-white">
+      <div class="flex pt-4 px-4 justify-between grid grid-cols-2 lg:grid-cols-4">
+
+        <div>
+          <h4>Category</h4>
+          <ul class="font-normal text-lg">
+            <li class="py-2">Home</li>
+            <li class="py-2">Our Service</li>
+            <li class="py-2">Products</li>
+            <li class="py-2">About Us</li>
+            <li class="py-2">Contact Us</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Knowledge Base</h4>
+          <ul class="font-normal text-lg">
+            <li class="py-2">Deliver</li>
+            <li class="py-2">Return</li>
+            <li class="py-2">Service</li>
+            <li class="py-2">Discount</li>
+            <li class="py-2">Special Offer</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Useful Link</h4>
+          <ul class="font-normal text-lg">
+            <li class="py-2">Site Map</li>
+            <li class="py-2">Search</li>
+            <li class="py-2">Service</li>
+            <li class="py-2">Discount</li>
+            <li class="py-2">Review</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Contact Us</h4>
+          <ul class="font-normal text-lg">
+            <li class="py-2">12, Odunitan Street Osogbo</li>
+            <li class="py-2"><i class="fa-solid fa-phone"></i>08127221696</li>
+            <li class="py-2"><i class="fa-solid fa-envelope"></i>adeoyeaisha533@gmail.com</li>
+            <li class="py-2"><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-twitter"></i></li>
+          </ul>
+        </div>
+
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
