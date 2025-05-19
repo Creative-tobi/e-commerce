@@ -26,7 +26,7 @@
      
     </style>
 </head>
-<body class="dark-mode">
+<body class="white-mode">
 
     <!-- <header class="sticky top-0"> -->
         <div class="block md:flex justify-between mt-4 mx-4">
@@ -93,6 +93,83 @@
 
 
         
+        <div class="w-auto bg-white border m-2 rounded-xl shadow-sm">
+            <div class="bg-red-600 border-2 border-black text-white w-3xs rounded-xl p-1 ml-4">Welcome To Your Delivery Page</div>
+        </div>
+
+        <h2 class="text-center">PAYMENT SECTION</h2>
+        <hr>
+
+        <div class="grid grid-cols-2 mx-4">
+
+          <div>
+            <h6>SUPPLIER</h6>
+            <h3>RealMin Tech Store</h3>
+            <p>12, Oduntan street Gbodofon Aregbe, Osogbo</p>
+            <p>08127221696</p>
+          </div>
+
+          <div>
+            <h6>CLIENT</h6>
+            <h3>Client's Name</h3>
+            <p>Client's Address</p>
+            <p>Client Number</p>
+          </div>
+
+        </div>
+        
+        <hr>
+        <div class="grid grid-cols-2 mx-4">
+          <div>
+            <form action="">
+              <h3>Payment Method:</h3>
+              <label for="" class="font-bold">Debit Card</label>
+              <input type="radio" name="Payment method" id=""><br>
+              <label for="" class="font-bold">PayPal</label>
+              <input type="radio" name="Payment method" id=""><br>
+              <label for="" class="font-bold">Flutter Wave</label>
+              <input type="radio" name="Payment method" id="">
+            </form>
+          </div>
+          <p class="font-bold">Issue Date:</p>
+      </div>
+
+      <table class="table-auto w-[100%]">
+        <thead class="bg-red-600 text-white p-2"> 
+          <tr>
+          <th class="p-2">VIEW DESCRIPTION</th>
+          <th class="p-2">IMAGE</th>
+          <th class="p-2">PRICE</th>
+          <th class="p-2">QUANTITY</th>
+          <th class="p-2">TOTAL</th>
+          <th class="p-2">REMOVE</th>
+        </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td class="font-bold text-2xl">Book of Life</td>
+            <td><img src="./image/reading-4020015__340.jpg.jpeg" alt="" class="h-30 w-30"></td>
+            <td class="font-bold text-2xl">₦4,500</td>
+            <td><div class=" h-12 w-xs bg-white border">1</div></td>
+            <td class="font-bold text-2xl">₦4,500</td>
+            <td><button class="bg-red-500 text-white p-2" style="border-radius: 4px;">Remove</button></td>
+          </tr>
+  
+          <tr>
+            <td class="font-bold text-2xl">Novel by Jens</td>
+            <td><img src="./image/reading-4020015__340.jpg.jpeg" alt="" class="h-30 w-30"></td>
+            <td class="font-bold text-2xl">₦4,500</td>
+            <td><div class=" h-12 w-xs bg-white border">1</div></td>
+            <td class="font-bold text-2xl">₦4,500</td>
+            <td><button class="bg-red-500 text-white p-2 " style="border-radius: 4px;">Remove</button></td>
+          </tr>
+        </tbody>
+
+
+      </table>
+        
+
 
         <footer class="bg-black text-white">
             <div class="flex pt-4 px-4 justify-between grid grid-cols-2 lg:grid-cols-4">
@@ -149,4 +226,4 @@
             crossorigin="anonymous"
           ></script>   
 </body>
-</html>
+</html
